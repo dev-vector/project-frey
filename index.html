@@ -1,1 +1,388 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="css/style.min.css"> <!-- сжатый css-->    <title>Gulp</title></head><body>    <header class="header">    <h1 class="header__title">Переброска, загрузка и выгрузка сырья</h1>    <p class="header__subtitle">в отделении зольная-резка</p></header>    <!-- этим мы подключаем файл header-->    <main class="main">        <!-- <h1 class="main__title">Переброска, загрузка и выгрузка сырья.</h1>        <p class="main__subtitle">в отделении Зольная-Резка</p> -->        <table class="main__table-raw">            <caption>                <div class="zapis"><a href="#popup1">Добавить запись!</a></div>            </caption>            <!-- <caption>Таблица зольников</caption> -->            <tr class="table-raw__tr">                <!--строка -->                <th>№ <p>ряда</p>                </th>                <th>Сырье <p>(тонна)</p>                </th>                <th>Зольник <a href="#popup2">                        <p>(загрузка)</p>                    </a>                </th>                <th>Зольник <p>(перезолка)</p>                </th>                <th>Зольник <p>(перезолка)</p>                </th>                <th>Выгрузка <p>(дата)</p>                </th>                <th>Ва(n)/<p>Срок зен.</p>                </th>            </tr>            <tr>                <td class="number-row">                    <div class="number-row__one">1</div>                </td>                <td>                    <p>3,5</p>                    <p>сырье</p>                </td>                <td>                    <p>36</p>                    <p>00.00.00</p>                </td>                <td>                    <p>23</p>                    <p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>                    <p>2</p>                </td>                <td>                    <p>4</p>                    <p>сырье</p>                </td>                <td>                    <p>36⅔</p>                    <p>00.00.00</p>                </td>                <td>                    <p>23</p>                    <p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>3                </td>                <td>4,5<p>сырье</p>                </td>                <td>37<p>00.00.00</p>                </td>                <td>23,5<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>4                </td>                <td>5<p>сырье</p>                </td>                <td>38<p>00.00.00</p>                </td>                <td>24<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>5                </td>                <td>5,5<p>сырье</p>                </td>                <td>38⅔<p>00.00.00</p>                </td>                <td>24,5<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>6                </td>                <td>6<p>сырье</p>                </td>                <td>39⅓<p>00.00.00</p>                </td>                <td>25<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>7                </td>                <td>6,5<p>сырье</p>                </td>                <td>40<p>00.00.00</p>                </td>                <td>25,5<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>8                </td>                <td>7<p>сырье</p>                </td>                <td>40⅔<p>00.00.00</p>                </td>                <td>26<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>9                </td>                <td>7,5<p>сырье</p>                </td>                <td>41⅓<p>00.00.00</p>                </td>                <td>26<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>10                </td>                <td>8<p>сырье</p>                </td>                <td>42<p>00.00.00</p>                </td>                <td>26,5<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>11                </td>                <td>8,5<p>сырье</p>                </td>                <td>42⅔<p>00.00.00</p>                </td>                <td>27<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>            <tr>                <td>12                </td>                <td>9<p>сырье</p>                </td>                <td>43⅓<p>00.00.00</p>                </td>                <td>27,5<p>00.00.00</p>                </td>                <td>                    <p>28</p>                    <p>00.00.00</p>                </td>                <td>                    <p>00.00.00</p>                </td>                <td>                    <p>28 c</p>                    <p>13</p>                </td>            </tr>        </table>        <div class="content-menu">        </div>    </main>    <script src="js/script.min.js"></script> <!-- сжатый js-->    <div class="popup" id="popup1">        <a href="##" class="popup__area"></a>        <div class="popup__body">            <div class="popup__content">                <a href="##" class="popup__close">X</a>                <div class="popup__title">Загрузка сырья в зольник</div>                <div class="popup__textforms">                    <div class="forms">                        <form action="handler.php">                            <p><b>Сырье:</b></p>                            <div class="forms__action">                                <div class="parword"><input type="radio" name="answer" value="a1">                                    Ловаш</div><Br>                                <div class="parword"><input class="input-type" type="radio" name="answer" value="a2">                                    Словак</div><Br>                                <div class="parword"><input class="input-type" type="radio" name="answer" value="a2">                                    Свинина</div><Br>                                <div class="parword"><input class="input-type" type="radio" name="answer" value="a3">                                    Кур. лапы</div><Br>                                <div class="parword"><input class="input-type" type="radio" name="answer" value="a4">                                    Говядина</div>                            </div>                        </form>                    </div>                    <div class="ash-pans">                        <div class="quantity">                            <p><b>Кол-во (т):</b></p>                            <input class="download__item-1" size="5" type="text">                            <p class="download__item"><b>№ партии:</b></p>                            <input class="download__item-1" size="5" type="text">                        </div>                        <div class="number">                            <p><b>Зол. №</b></p>                            <input class="download__item-1" size="1" type="text" placeholder="золка">                            <p class="download__item"><b>Дата</b></p>                            <input class="download__item-1" size="1" type="text" placeholder="">                        </div>                    </div>                </div>                <div class="sumbit"><a href="">                        <p class="sumbit1">Потвердить</p>                    </a></div>            </div>        </div>    </div>    <div class="popup" id="popup2">        <a href="##" class="popup__area"></a>        <div class="popup__body">            <div class="popup__content popup_mod">                <a href="##" class="popup__close">X</a>                <div class="popup__title">Загрузка сырья в зольник</div>                <div class="popup__textforms">                    <div class="upload">                        <div class="number2">                            <p class="number2__item"><b>Зол. №</b>                                <input class="download__item-2" size="1" type="text" placeholder="перезол-1">                            </p>                            <p><b>Дата</b>                                <input class="download__item-3" size="1" type="text" placeholder="">                            </p>                        </div>                    </div>                </div>                <div class="sumbit"><a href="">                        <p class="sumbit1">Потвердить</p>                    </a>                </div>            </div>        </div>    </div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css"> <!-- сжатый css-->
+	<title>Gulp</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="header__title">Переброска, загрузка и выгрузка сырья</h1>
+		<p class="header__subtitle">в отделении зольная-резка</p>
+	</header>
+	<!-- этим мы подключаем файл header-->
+	<main class="main">
+		<!-- <h1 class="main__title">Переброска, загрузка и выгрузка сырья.</h1>
+        <p class="main__subtitle">в отделении Зольная-Резка</p> -->
+		<table class="main__table-raw">
+			<caption>
+				<div class="zapis"><a href="#popup1">Добавить запись!</a></div>
+			</caption>
+			<!-- <caption>Таблица зольников</caption> -->
+			<tr class="table-raw__tr">
+				<!--строка -->
+				<th>№ <p>ряда</p>
+				</th>
+				<th>Сырье <p>(тонна)</p>
+				</th>
+				<th>Зольник <a href="#popup2">
+						<p>(загрузка)</p>
+					</a>
+				</th>
+				<th>Зольник <p>(перезолка)</p>
+				</th>
+				<th>Зольник <p>(перезолка)</p>
+				</th>
+				<th>Выгрузка <p>(дата)</p>
+				</th>
+				<th>Ва(n)/<p>Срок зен.</p>
+				</th>
+			</tr>
+			<tr>
+				<td class="number-row">
+					<div class="number-row__one">1</div>
+				</td>
+				<td>
+					<p>3,5</p>
+					<p>сырье</p>
+				</td>
+				<td>
+					<p>36</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>23</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>2</p>
+
+				</td>
+				<td>
+					<p>4</p>
+					<p>сырье</p>
+				</td>
+				<td>
+					<p>36⅔</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>23</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>3
+				</td>
+				<td>4,5<p>сырье</p>
+				</td>
+				<td>37<p>00.00.00</p>
+				</td>
+				<td>23,5<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>4
+				</td>
+				<td>5<p>сырье</p>
+				</td>
+				<td>38<p>00.00.00</p>
+				</td>
+				<td>24<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>5
+				</td>
+				<td>5,5<p>сырье</p>
+				</td>
+				<td>38⅔<p>00.00.00</p>
+				</td>
+				<td>24,5<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>6
+				</td>
+				<td>6<p>сырье</p>
+				</td>
+				<td>39⅓<p>00.00.00</p>
+				</td>
+				<td>25<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>7
+				</td>
+				<td>6,5<p>сырье</p>
+				</td>
+				<td>40<p>00.00.00</p>
+				</td>
+				<td>25,5<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>8
+				</td>
+				<td>7<p>сырье</p>
+				</td>
+				<td>40⅔<p>00.00.00</p>
+				</td>
+				<td>26<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>9
+				</td>
+				<td>7,5<p>сырье</p>
+				</td>
+				<td>41⅓<p>00.00.00</p>
+				</td>
+				<td>26<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>10
+				</td>
+				<td>8<p>сырье</p>
+				</td>
+				<td>42<p>00.00.00</p>
+				</td>
+				<td>26,5<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>11
+				</td>
+				<td>8,5<p>сырье</p>
+				</td>
+				<td>42⅔<p>00.00.00</p>
+				</td>
+				<td>27<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+			<tr>
+				<td>12
+				</td>
+				<td>9<p>сырье</p>
+				</td>
+				<td>43⅓<p>00.00.00</p>
+				</td>
+				<td>27,5<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28</p>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>00.00.00</p>
+				</td>
+				<td>
+					<p>28 c</p>
+					<p>13</p>
+				</td>
+			</tr>
+		</table>
+		<div class="content-menu">
+		</div>
+	</main>
+	<script src="js/script.min.js"></script> <!-- сжатый js-->
+	<div class="popup" id="popup1">
+		<a href="##" class="popup__area"></a>
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="##" class="popup__close">X</a>
+				<div class="popup__title">Загрузка сырья в зольник</div>
+				<div class="popup__textforms">
+					<div class="forms">
+						<form action="handler.php">
+							<p><b>Сырье:</b></p>
+							<div class="forms__action">
+								<div class="parword"><input type="radio" name="answer" value="a1">
+									Ловаш</div><Br>
+								<div class="parword"><input class="input-type" type="radio" name="answer" value="a2">
+									Словак</div><Br>
+								<div class="parword"><input class="input-type" type="radio" name="answer" value="a2">
+									Свинина</div><Br>
+								<div class="parword"><input class="input-type" type="radio" name="answer" value="a3">
+									Кур. лапы</div><Br>
+								<div class="parword"><input class="input-type" type="radio" name="answer" value="a4">
+									Говядина</div>
+							</div>
+						</form>
+					</div>
+					<div class="ash-pans">
+						<div class="quantity">
+							<p><b>Кол-во (т):</b></p>
+							<input class="download__item-1" size="5" type="text">
+							<p class="download__item"><b>№ партии:</b></p>
+							<input class="download__item-1" size="5" type="text">
+						</div>
+						<div class="number">
+							<p><b>Зол. №</b></p>
+							<input class="download__item-1" size="1" type="text" placeholder="золка">
+							<p class="download__item"><b>Дата</b></p>
+							<input class="download__item-1" size="1" type="text" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="sumbit"><a href="">
+						<p class="sumbit1">Потвердить</p>
+					</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup2">
+		<a href="##" class="popup__area"></a>
+		<div class="popup__body">
+			<div class="popup__content popup_mod">
+				<a href="##" class="popup__close">X</a>
+				<div class="popup__title">Загрузка сырья в зольник</div>
+				<div class="popup__textforms">
+					<div class="upload">
+						<div class="number2">
+							<p class="number2__item"><b>Зол. №</b>
+								<input class="download__item-2" size="1" type="text" placeholder="перезол-1">
+							</p>
+							<p><b>Дата</b>
+								<input class="download__item-3" size="1" type="text" placeholder="">
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="sumbit"><a href="">
+						<p class="sumbit1">Потвердить</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
